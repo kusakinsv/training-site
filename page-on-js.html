@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Page on JS</title>
+</head>
+
+<body>
+
+    <script>
+        let body = document.querySelector('body');
+        body.innerHTML = `<div class="sitebox">
+        <div class="header">
+            <div class="main-menu">
+                <div class="menu__container">
+                    <div class="logo">
+                        <img src="img/triangle.png" alt="">
+                    </div>
+                    <ul class="nav">
+                        <li class="btn"><a href="index.html">Main Page</a></li>
+                        <li class="btn"><a href="some-css-features.html">Some CSS Features</a></li>
+                        <li class="btn"><a href="dynamic-objects.html">Dynamic Objects</a></li>
+                    </ul>
+                </div>
+            </div>`
+
+        let sitebox = document.querySelector('div.sitebox')
+
+        let section1 = document.createElement('div');
+        section1.className = "section1"
+        sitebox.append(section1);
+
+        let s1TextBox = document.createElement('div')
+        s1TextBox.className = "s1_textBox"
+        // s1TextBox.setAttribute('class', "s1_textBox")
+        s1TextBox.textContent = "Эта страница создана исключительно с помощью JS";
+        s1TextBox.style.color = 'white'
+        s1TextBox.style.marginTop = '70px'
+        s1TextBox.style.fontSize = '20px'
+        section1.append(s1TextBox)
+
+    </script>
+</body>
+
+</html>

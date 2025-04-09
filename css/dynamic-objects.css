@@ -1,0 +1,129 @@
+
+.s1_container {
+    margin-top: 50px;
+    height: 30px;
+    text-align: center;
+}
+
+.s2_container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 840px;
+
+}
+
+.s2_inner_block {
+    border-radius: 5px;
+    padding: 10px;
+    height: 220px;
+    width: 250px;
+    background-color: rgb(30, 30, 30);
+}
+
+.s2_text {
+    padding: 10px;
+
+}
+
+.s2_icon {
+    margin: 15px;
+    padding: 20px;
+    font-size: 35px;
+    color: #e3e3e3;
+}
+
+.s2_btn {
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    vertical-align: middle;
+    font-family: Arial, serif;
+    font-weight: bold;
+    /*padding: 7px;*/
+    line-height: 31px;
+}
+
+.s2_btn_container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn_red {
+    background-color: red;
+}
+
+.btn_yellow {
+    background-color: yellow;
+}
+
+.btn_blue {
+    background-color: cornflowerblue;
+}
+
+.btn_green {
+    background-color: chartreuse;
+}
+
+.btn_active {
+    border: rgb(30, 30, 30) solid 3.5px;
+    border-radius: 7.5px;
+}
+
+.s3_inner_block {
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(20, 20, 20);
+    height: 220px;
+    width: 840px;
+}
+
+.s3_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    height: 25px;
+    width: 100px;
+    margin: 20px auto;
+    font-family: Gotham;
+    color: white;
+    letter-spacing: 3px;
+    border-radius: 5px;
+}
+
+.s3_button:hover{
+    cursor: pointer;
+    border: solid 1px white;
+}
+
+.s3_button:active{
+    cursor: pointer;
+    background-color: white;
+    color: tomato;
+}
+
+.pb_container {
+    border-radius: 5px;
+    display: flex;
+    height: 30px;
+    width: 500px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.complete {
+    border-radius: 5px 0 0 5px;
+    height: 100%;
+    /*width: 30px;*/
+    background-color: forestgreen;
+}
+
+.not_complete {
+    height: 100%;
+}
+

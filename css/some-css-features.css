@@ -1,0 +1,101 @@
+.sitebox {
+    background-color: rgb(0, 0, 0);
+}
+
+/* .section1 {
+    padding: 30px;
+} */
+
+.container1 {
+    background-color: rgb(20, 20, 20);
+    margin: 30px auto;
+    padding: 20px 60px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    width: 840px;
+}
+
+
+.s1_text {
+    text-indent: 30px;
+    /*красная строка*/
+    text-align: justify;
+    margin: 0 auto;
+    margin-top: 40px;
+    color: white;
+    font-size: 18px;
+    width: 840px;
+}
+
+.c1_numbers {
+    color: rgb(255, 255, 255);
+}
+
+.c1_numbers {
+    font-size: 37px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    margin: 10px;
+}
+
+.c1_text {
+    margin: 5px auto;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+    letter-spacing: 1px;
+}
+
+.c1_line {
+    margin: 20px auto;
+    width: 40px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+.fa {
+    color: white;
+    font-size: 35px;
+}
+
+.c1_icon {
+    cursor: pointer;
+
+    .fa_vis {
+        position: absolute;
+        visibility: visible;
+    }
+
+    .fa_unvis {
+        visibility: hidden;
+    }
+}
+
+.c1_icon:hover {
+    .fa-heart {
+        color: crimson;
+    }
+    .fa-star {
+        color: rgb(255, 251, 0);
+    }
+    .fa-bell {
+        color: rgb(255, 174, 0);
+    }
+    .fa-circle {
+        color: rgb(123, 165, 255);
+    }
+
+    .fa_vis {
+        visibility: hidden;
+    }
+
+    .fa_unvis {
+        visibility: visible;
+    }
+}
