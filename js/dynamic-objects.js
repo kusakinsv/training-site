@@ -1,6 +1,6 @@
 let s1Text = document.querySelector('.s1_container > .s1_text');
 s1Text.textContent = "Этот текст присваивается с помощью JS";
-// setInterval(() => s1Text.hidden = !s1Text.hidden, 800);
+setInterval(() => s1Text.hidden = !s1Text.hidden, 2000);
 
 //смена цвета звезды по клику
 let elems1 = document.querySelector('.s2_c2 .s2_btn_container');
