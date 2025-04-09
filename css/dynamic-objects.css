@@ -74,7 +74,7 @@
 }
 
 .s3_inner_block {
-    margin: 25px auto;
+    margin: 0px auto;
     padding: 10px;
     background-color: #1E1E1E;
     height: 220px;
@@ -112,8 +112,8 @@
     height: 30px;
     width: 500px;
     background-color: white;
-    margin: 0 auto;
-    margin-top: 15px;
+    margin: 20px auto;
+    margin-top: 20px;
 }
 
 .complete {
