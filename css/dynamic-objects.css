@@ -74,7 +74,7 @@
 }
 
 .s3_inner_block {
-    margin: 10px auto;
+    margin: 25px auto;
     padding: 10px;
     background-color: #1E1E1E;
     height: 220px;
@@ -86,9 +86,9 @@
     justify-content: center;
     align-items: center;
     background-color: tomato;
-    height: 25px;
+    height: 28px;
     width: 100px;
-    margin: 30px auto;
+    margin: 44px auto;
     font-family: Gotham;
     color: white;
     letter-spacing: 3px;
