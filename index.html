@@ -5,33 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
+    <!--    <link rel="stylesheet" href="css/main.css">-->
     <title>My training site</title>
 </head>
 
 <body>
-    <div class="sitebox">
-        <div class="header">
-            <div class="main-menu">
-                <div class="menu__container">
-                    <div class="logo">
-                        <img src="img/triangle.png" alt="">
-                    </div>
-                    <ul class="nav">
-                        <li class="btn"><a href="some-css-features.html">Some CSS Features</a></li>
-                        <li class="btn"><a href="dynamic-objects.html">Dynamic objects</a></li>
-                        <li class="btn"><a href="page-on-js.html">Page on JS</a></li>
-                    </ul>
+<div class="sitebox">
+    <div class="header">
+        <div class="main-menu">
+            <div class="menu__container">
+                <div class="logo">
+                    <img src="img/triangle.png" alt="">
                 </div>
+                <ul class="nav">
+                    <li class="btn"><a href="some-css-features.html">Some CSS Features</a></li>
+                    <li class="btn"><a href="dynamic-objects.html">Dynamic objects</a></li>
+                    <li class="btn"><a href="page-on-js.html">Page on JS</a></li>
+                </ul>
             </div>
         </div>
-        <div class="section1">
-            <img class="emili" src="img/emili 3.png" alt="">
-        </div>
-        <div class="section">
-            <div class="bigtitle">PRACTICE AND YOU WILL SUCCEED</div>
+    </div>
+    <div class="section1">
+        <div class="emili_container">
+            <div class="arrow" id="left_arrow"></div>
+            <img class="emili" alt="">
+            <div class="arrow" id="right_arrow"></div>
         </div>
     </div>
-</body>
+    <div class="section">
+        <div class="bigtitle">PRACTICE AND YOU WILL SUCCEED</div>
+    </div>
+</div>
+<script>
+    let imgArray = [
+        "./img/emili/emili 1.png",
+        "./img/emili/emili 2.png",
+        "./img/emili/emili 3.png",
+        "./img/emili/emili 4.png",
+    ]
+    let elem = 0;
+    let src = document.querySelector('img.emili').attributes.getNamedItem('src');
+    document.querySelector('img.emili').setAttribute('src', `./img/emili/emili 1.png`)
 
+
+    document.getElementById('left_arrow').onclick = function () {
+        if (elem === 0) {
+            elem = imgArray.length - 1
+        } else {
+            elem = elem-1
+        }
+        document.querySelector('img.emili').setAttribute('src', `${imgArray[elem]}`)
+    }
+
+    document.getElementById('right_arrow').onclick = nextEmili;
+
+    function nextEmili () {
+        if (elem === imgArray.length-1) {
+            elem = 0
+        } else {
+            elem = elem+1
+        }
+        document.querySelector('img.emili').setAttribute('src', `${imgArray[elem]}`)
+    }
+
+    setInterval(()=> nextEmili(), 10000)
+</script>
+</body>
 </html>
